@@ -1,33 +1,27 @@
 #include <iostream>
+using namespace std;
 
-class SerialObject {
+class SerialNumberGenerator {
 private:
-    static int objectCount; // Static member to count the objects
-    int serialNumber; // Serial number for each object
+    static int objectCount;
+    int serialNumber;
 
 public:
-    // Constructor
-    SerialObject() {
-        serialNumber = ++objectCount; // Increment and assign the serial number
+    SerialNumberGenerator() {
+        serialNumber = ++objectCount;
     }
 
-    // Member function to report serial number
-    void reportSerialNumber() const {
-        std::cout << "Serial Number: " << serialNumber << std::endl;
+    void showSerialNumber() const {
+        cout << "Serial Number: " << serialNumber << endl;
     }
 };
 
-// Initialize the static member
-int SerialObject::objectCount = 0;
+int SerialNumberGenerator::objectCount = 0;
 
 int main() {
-    SerialObject obj1;
-    SerialObject obj2;
-    SerialObject obj3;
-
-    obj1.reportSerialNumber(); // Output: Serial Number: 1
-    obj2.reportSerialNumber(); // Output: Serial Number: 2
-    obj3.reportSerialNumber(); // Output: Serial Number: 3
-
+    SerialNumberGenerator obj1, obj2, obj3;
+    obj1.showSerialNumber();
+    obj2.showSerialNumber();
+    obj3.showSerialNumber();
     return 0;
 }
