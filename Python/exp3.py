@@ -25,12 +25,12 @@ def append_to_file(file_name, content):
 # Example usage:
 if __name__ == "__main__":
     file_name = "sample.txt"
-    
+
     # Write to the file
     write_to_file(file_name, "This is the first line.\n")
-    
+
     # Append to the file
     append_to_file(file_name, "This is the appended line.\n")
-    
+
     # Read from the file
     read_from_file(file_name)
