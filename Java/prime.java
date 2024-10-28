@@ -1,4 +1,4 @@
-public class PrimeNumbers {
+public class prime{
     public static void main(String[] args) {
         int limit = 20;  // Define the upper limit
 
@@ -24,4 +24,4 @@ public class PrimeNumbers {
         System.out.println();  // Print a new line after the output
     }
 }
-java
+

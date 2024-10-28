@@ -1,4 +1,4 @@
-public class prime {
+public class prime{
     public static void main(String[] args) {
         int limit = 20;  // Define the upper limit
 
